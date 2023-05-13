@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FBLAapp.Views.Page2"
+             FlyoutItem.IsVisible="False">
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <!--
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            -->
+
+            <Label Text="Create a Spiratic Account" TextColor="Black" HorizontalOptions="Center" FontSize="Title" FontFamily="Raleway"/>
+            <Label Text="One account for everything Spiratic" FontSize="Subtitle" HorizontalOptions="Center" TextColor="Black"/>
+
+            <Label Text="Username:" TextColor="Black"/>
+            <Entry Placeholder="Username" PlaceholderColor="Gray" TextColor="Black" x:Name="Username"/>
+            <Button Margin="10" x:Name="NameInputButton" Text="Done" Width="100" HorizontalOptions="Center"/>
+            <!--Clicked="NameInputButton_Click" -->
+            
+
+            <Label Text="Password:" TextColor="Black"/>
+            <Entry IsPassword="True" Placeholder="Password" PlaceholderColor="Gray" TextColor="Black"/>
+
+            <!--Creating Dropdown menu-->
+                <Picker x:Name="picker"
+                        Title="Select Your Grade Level"
+                        TitleColor="Black" TextColor="Black">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String> Grade 9</x:String>
+                            <x:String> Grade 10</x:String>
+                            <x:String> Grade 11</x:String>
+                            <x:String> Grade 12</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+            <Label Text="By selecting Create Account, you agree to the Terms and Conditions of Spiratic" TextColor="Black" FontAttributes="Italic"/>
+            <CheckBox Color="Orange" />
+            
+            
+            <Button Text="Create Account" Clicked="OnButtonClicked"/>
+
+
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

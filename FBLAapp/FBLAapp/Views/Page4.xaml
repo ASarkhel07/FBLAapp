@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FBLAapp.Views.Page4">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="20">
+            <!--<Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />-->
+
+                <Label Text="Quarterly Report" TextColor="Black" HorizontalOptions="Center" FontSize="Title" VerticalOptions="Center" TextDecorations="Underline" FontFamily="Raleway">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizerQuaterlyReport_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+              
+
+                <Button Text="Click here to see your standing?"
+                    Clicked="UserRanking_Clicked"
+                    TextColor="White"
+                    BackgroundColor="Gray"
+                    BorderColor="Black"
+                    BorderWidth="2"
+                    CornerRadius="5"
+                    WidthRequest="50"
+                    HeightRequest="50"/>
+
+
+            <Line X1="-20" Y1="0" X2="500" Y2="0" Stroke="White" StrokeThickness="30"/>
+
+            <Frame BorderColor="DarkSlateGray" CornerRadius="10" HasShadow="true">
+                <Label Text="Armaan Sarkhel&#x0a;Points: 29&#x0a;Grade: 9" TextColor="Black" VerticalOptions="Start" HorizontalOptions="Start" FontSize="Medium" Margin="0" FontFamily="Raleway"/>
+            </Frame>
+
+            <Line X1="-20" Y1="0" X2="500" Y2="0" Stroke="White" StrokeThickness="22"/>
+
+            <Frame BorderColor="DarkSlateGray" CornerRadius="10" HasShadow="true">
+                <Label Text="Ganeshan Venu&#x0a;Points: 28&#x0a;Grade: 9" TextColor="Black" VerticalOptions="Start" HorizontalOptions="Start" FontSize="Medium" Margin="0" FontFamily="Raleway"/>
+            </Frame>
+
+            <Line X1="-20" Y1="0" X2="500" Y2="0" Stroke="White" StrokeThickness="22"/>
+
+            <Frame BorderColor="DarkSlateGray" CornerRadius="10" HasShadow="true">
+                <Label Text="Dave Smith&#x0a;Points: 30&#x0a;Grade: 10" TextColor="Black" VerticalOptions="Start" HorizontalOptions="Start" FontSize="Medium" Margin="0" FontFamily="Raleway"/>
+            </Frame>
+
+            <Line X1="-20" Y1="0" X2="500" Y2="0" Stroke="White" StrokeThickness="22"/>
+            
+            <Frame BorderColor="DarkSlateGray" CornerRadius="10" HasShadow="true">
+                <Label Text="John Adam&#x0a;Points: 26&#x0a;Grade: 10" TextColor="Black" VerticalOptions="Start" HorizontalOptions="Start" FontSize="Medium" Margin="0" FontFamily="Raleway"/>
+            </Frame>
+            <Line X1="-20" Y1="0" X2="500" Y2="0" Stroke="White" StrokeThickness="22"/>
+
+            <Frame BorderColor="DarkSlateGray" CornerRadius="10" HasShadow="true">
+                <Label Text="Roger Wayne&#x0a;Points: 27&#x0a;Grade: 11" TextColor="Black" VerticalOptions="Start" HorizontalOptions="Start" FontSize="Medium" Margin="0" FontFamily="Raleway"/>
+            </Frame>
+            <Line X1="-20" Y1="0" X2="500" Y2="0" Stroke="White" StrokeThickness="22"/>
+
+            <Frame BorderColor="DarkSlateGray" CornerRadius="10" HasShadow="true">
+                <Label Text="Bruce Harris&#x0a;Points: 28&#x0a;Grade: 12" TextColor="Black" VerticalOptions="Start" HorizontalOptions="Start" FontSize="Medium" Margin="0" FontFamily="Raleway"/>
+            </Frame>
+            <Line X1="-20" Y1="0" X2="500" Y2="0" Stroke="White" StrokeThickness="22"/>
+            
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
